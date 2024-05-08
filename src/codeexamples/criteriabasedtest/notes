@@ -1,0 +1,43 @@
+import * as React from 'react';
+import { Text, View, StyleSheet, Button, Image } from 'react-native';
+
+export default function App() {
+  const someButton = (message) => {
+    alert(message);
+  }
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.innerView}>
+        <Text style={styles.text}>Javeria Hanif, CMSC 475.</Text>
+      </View>
+      <View style={styles.innerView}>
+        <Text style={styles.text}>Do you want to play?</Text>
+      </View>
+      <View style={styles.buttonsContainer}>
+        <View style={{ padding: 10 }}>
+          <Button title="Yes" onPress={someButton.bind(this, "Loading in 1 min")}></Button>
+        </View>
+        <View style={{ padding: 10 }}>
+          <Button title="No" onPress={someButton.bind(this, "Going back to main page")}></Button>
+        </View>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ecf0f1',
+    padding: 8,
+  },
+  text: {
+    margin: 24,
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+});
