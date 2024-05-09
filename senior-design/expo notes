@@ -1,0 +1,13 @@
+- our project is about using wifi signals to figure out information about our surroundings without invasive sensors. 
+- wifi signals can help us determine the number of people that are in a room. 
+- wifi signals are everywhere so our goal is to create a machine learning model that can help site managers get important information such as predict how many people are occupying a space or what activities are taking place. 
+- in our experiment, we use esp32 to collect csi data. this collects info about wifi signals 
+- raspberry pi helps us process and manage the information from esp32
+- keras api is used to train machine learning models 
+- to make the experiment work, we set up esp32s and raspberry pis in a room 
+- we bring in people, usually we start from one person and then we increase the number of people in the room 
+- we take notes on how many people are in a room during each walk-in 
+- this is where we annotate the data with how many occupants there are in the room at the time
+- we continue this process until enough data is collected 
+- we then use csi data i.e. information from wifi signals and annotations that we made to train the machine learning models. 
+- our goal is to make our machine learning model as smart as possible at predicting occupancy so we would typically adjust the parameters to get the most accurate results. 
