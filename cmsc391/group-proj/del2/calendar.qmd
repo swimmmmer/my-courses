@@ -1,0 +1,39 @@
+---
+title: Deliverable 2 - Pre-production
+author: Javeria, Fiona, Hannah, Zara
+date: Nov 9, 2023
+format:
+    html:
+        theme: minty
+        toc: true
+        embed-resources: true
+        code-copy: true
+---
+```{mermaid}
+gantt
+    title Task Schedule
+    dateFormat MM-DD
+    axisFormat %b %d
+    section Deliverable 2 
+        Completed task            :done, milestone, m1, 11-09, 11-09
+    section Deliverable 3
+        create mvp:crit, done, a1, 11-10, 11-16
+        update Github:done,  a1, 11-16, 11-16
+        Deliverable 3 : done, milestone, m1, 11-16, 11-16
+    section Deliverable 4
+        documentation draft (Waiting In Task list):active, a1, 11-25, 11-30
+        judging system implementation:active, a1, 11-17, 11-30
+        score tracker:active,a1, 11-17, 11-30
+        work in Unity (in-progress):crit, active, a1, 11-17, 11-30
+        art assets (in-progress):active, a1, 11-17, 11-30
+        Deliverable 4 : crit, active, milestone, m1, 11-30, 11-30
+    section Deliverable 5
+        art assets (in-progress):a2, 12-01, 12-03
+        work in Unity (in-progress):a2, 12-01, 12-07
+        update Github: a2, 12-07, 12-07
+        update ReadME.md:a2, 12-07, 12-07
+        Game submission: a2, 12-07, 12-07
+        Deliverable 5 (Adequate time remaining): milestone, m1, 12-07, 12-07
+        Project Evaluations: milestone, m1, 12-10, 12-10
+        Project Showcase: milestone, m1, 12-15, 12-15
+```
