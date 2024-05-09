@@ -1,0 +1,72 @@
+(cons 4 
+        (cons (cons 7 (cons 22 nil))
+              (cons "art" 
+                    (cons (cons "math" (cons (cons 8 nil) nil) cons 99 nil) (cons 100 nil)))))
+
+;; (4 (7 22) "art" ("math" (8) 99) 100)
+
+; 4
+(cons 4
+
+;(7 22)
+(cons (cons 7 (cons 22 nil)))
+
+;"art"
+(cons "art"
+
+;("math" (8) 99)
+(cons (cons "math" (cons (cons 8 nil) nil) (cons 99 nil)))
+
+; 100
+(cons 100 nil)))
+
+(defun avg (aList)
+    "Computes an average of elements in aList"
+    (if (null aList)
+        nil ;; returns nil for an empty list
+        (let ((sum 0) (count 0)) ;; initializes sum and count
+        (dolist (num aList) ;; iterates over elements in aList
+            (when (numberp num) ;; checks if an element is a number
+            (incf sum num) ;; adds number to the sum 
+            (incf count))) ;; increments the count
+        (if (zerop count)
+            nil ;; returns nil if count = 0
+            (/ sum count))))) ;; caclulates the average
+
+(defun taxCalculator (limit rate values &optional result)
+    "Calculates the given values"
+    (if (and (numberp limit) (numberp rate) (listp values))
+        (let ((result '()))
+        (dolist (num values)
+            (when (numberp num)
+            (if (> num limit)
+                (push (* num rate) result)
+                (push num result))))
+        (nreverse result)) 
+        nil)) ;; Return nil for invalid inputs or empty values list
+
+
+
+
+(defun clean (aFunc aList)
+    "Filters elements from aList based on the predicate aFunc."
+    (if (null aList)
+        nil ;; returns nil for an empty list
+        (let ((result '())) ;; initializes result
+        (dolist (num aList) ;; iterates over elements in aList
+            (when (numberp num) ;; checks if an element is a number
+            (if (funcall aFunc num)
+                (push num result))))
+            (remove-if-not #'aFunc aList))))
+
+
+(defun clean (aFunc aList)
+  "Filters elements from aList based on value returned by aFunc"
+  (if (null aList)
+      nil ;; returns nil for an empty list
+      (let ((result '())) ;; initializes result list
+        (dolist (num aList) ;; iterates over elements in aList
+          (if (listp num) ;; checks if the element is a list
+              (push (clean aFunc num) result) ;; filters for sublists
+                (push num result))))
+        (nreverse result)))

@@ -1,0 +1,2 @@
+Prohibited destructive functions:
+setq, setf, delete, nconc, push, or any derivatives of the setq special operator. 

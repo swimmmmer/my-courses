@@ -1,0 +1,16 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     Analyzer.out
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _validNumber, symObjAddr: 0x0, symBinAddr: 0x1000033F0, symSize: 0x50 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _validNumber, symObjAddr: 0x0, symBinAddr: 0x1000033F0, symSize: 0x50 }
+  - { offsetInCU: 0x77, offset: 0x77, size: 0x8, addend: 0x0, symName: _validIdentifier, symObjAddr: 0x50, symBinAddr: 0x100003440, symSize: 0x4B }
+  - { offsetInCU: 0x26, offset: 0x157, size: 0x8, addend: 0x0, symName: _parser, symObjAddr: 0x0, symBinAddr: 0x100003490, symSize: 0x14 }
+  - { offsetInCU: 0x95, offset: 0x1C6, size: 0x8, addend: 0x0, symName: _parser, symObjAddr: 0x0, symBinAddr: 0x100003490, symSize: 0x14 }
+  - { offsetInCU: 0x26, offset: 0x272, size: 0x8, addend: 0x0, symName: _tokenizer, symObjAddr: 0x0, symBinAddr: 0x1000034B0, symSize: 0x2F0 }
+  - { offsetInCU: 0xA3, offset: 0x2EF, size: 0x8, addend: 0x0, symName: _tokenizer, symObjAddr: 0x0, symBinAddr: 0x1000034B0, symSize: 0x2F0 }
+  - { offsetInCU: 0x161, offset: 0x3AD, size: 0x8, addend: 0x0, symName: _get_token, symObjAddr: 0x2F0, symBinAddr: 0x1000037A0, symSize: 0x28D }
+  - { offsetInCU: 0x26, offset: 0x637, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003A30, symSize: 0x240 }
+  - { offsetInCU: 0xA4, offset: 0x6B5, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003A30, symSize: 0x240 }
+  - { offsetInCU: 0x139, offset: 0x74A, size: 0x8, addend: 0x0, symName: _tokenEnumToString, symObjAddr: 0x240, symBinAddr: 0x100003C70, symSize: 0x16A }
+...
