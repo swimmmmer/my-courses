@@ -1,0 +1,11 @@
+{
+  "hash": "4dd273998283e7ffcde0ba5607b8b63f",
+  "result": {
+    "markdown": "---\ntitle: 'CMSC 475: Portfolio'\noutput-dir: ../docs\nformat:\n  html:\n    code-fold: true\n---\n\n## Figma Prototype\n\n<https://www.figma.com/proto/yrYSytBsEmJ9y9LgSO3Nzk/Name-Game-Prototype-1?node-id=12-100&scaling=scale-down&page-id=0%3A1&starting-point-node-id=12%3A100&show-proto-sidebar=1>{.figma}\n\n## Mobile App Video in Expo \n\n<https://drive.google.com/file/d/1rDLCEhhTmy5t6kxrsbsqwDcQlg9lMRpT/view?usp=sharing>{.video}\n\n## P5JS Sketch 1 \n\n<https://editor.p5js.org/javeriahanif/sketches/HdROglPLr>{.sketch1}\n\n## P5JS Sketch 2 \n\n<https://editor.p5js.org/javeriahanif/sketches/LgUPVrWml>{.sketch2}\n\n## P5JS Sketch 3 \n\n<https://editor.p5js.org/javeriahanif/sketches/SFt-sVuDS>{.sketch3}\n\n",
+    "supporting": [
+      "portfolio_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
